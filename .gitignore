@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.db-wal
+*.db-shm
+langchain/
+History.json.tmp
