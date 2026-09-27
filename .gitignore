@@ -4,3 +4,5 @@ __pycache__/
 *.db-shm
 langchain/
 History.json.tmp
+History.db
+Release.db
