@@ -1024,6 +1024,10 @@ def analyze_api(
 # 단순 검색
 # ============================================================
 
+# ============================================================
+# 단순 검색
+# ============================================================
+
 def search_api(
     keyword: str,
 ):
@@ -1036,8 +1040,8 @@ def search_api(
                 old_api,
                 new_api,
                 action,
-                from_version,
-                to_version,
+                from_tag,
+                to_tag,
                 code_type,
                 confidence
 
@@ -1082,9 +1086,9 @@ def search_api(
 
             print(
                 "Release:",
-                row["from_version"],
+                row["from_tag"],
                 "->",
-                row["to_version"],
+                row["to_tag"],
             )
 
             print(
@@ -1114,8 +1118,7 @@ def search_api(
 
     finally:
         conn.close()
-
-
+        
 # ============================================================
 # DB 정보
 # ============================================================
